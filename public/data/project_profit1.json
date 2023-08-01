@@ -1,0 +1,91 @@
+{
+    "header": [
+        {
+            "id": "project_name",
+            "type": "string",
+            "caption": "Project name"
+        },
+        {
+            "id": "total_by_project",
+            "type": "float",
+            "caption": "Total by project"
+        },
+        {
+            "id": "project_type",
+            "type": "string",
+            "caption": "Project type",
+            "align": "center"
+        },
+        {
+            "id": "jan",
+            "type": "float",
+            "caption": "Jan"
+        },
+        {
+            "id": "feb",
+            "type": "float",
+            "caption": "Feb"
+        }
+    ],
+    "data": [
+        [
+            "Atai",
+            1024.3,
+            "commercial",
+            2048.2,
+            4096.0
+        ],
+        [
+            "Mako",
+            2345.1,
+            "internal",
+            3465.3,
+            {
+                "d": 12.5,
+                "color": "selected"
+            }
+        ],
+        [
+            "Edelweiss",
+            54.4,
+            "commercial",
+            564.8,
+            4652.3
+        ],
+        [
+            "Sanctum",
+            1916.2,
+            "public",
+            7752.5,
+            9844.9
+        ],
+        [
+            "Quasar",
+            9602.5,
+            "internal",
+            1919.6,
+            5846.4
+        ],
+        [
+            "Jarvis",
+            2267.1,
+            "internal",
+            9502.8,
+            3656.6
+        ],
+        [
+            "gmhqx",
+            1719.6,
+            "oxvnm",
+            2898.5,
+            3280.8
+        ],
+        [
+            "myjga",
+            3821.2,
+            "zmwzs",
+            4040.9,
+            7127.2
+        ]
+    ]
+}

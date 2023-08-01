@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
+import './styles/App.css';
+import { pathes } from './helpers/pathes';
+
+console.log(pathes[0].path)
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [selectedReport, setSelectedReport] = useState(pathes[0].name)
+    const selectedPath = pathes.find(report => report.name === selectedReport).path
+
+    const [data, setData] = useState({})
+    const [errMsg, setErrMsg] = useState("")
+
+    const getData = async () => {
+        try {
+            const response = await fetch(selectedPath)
+            const fetchData = await response.json()
+            console.log(fetchData)
+            setData(fetchData)
+        } catch (error) {
+            setErrMsg(error.message)
+        }
+    }
+    useEffect(() => { getData() }, [selectedReport])
+    return (
+        <div className="App">
+            nblx
+        </div>
+    );
 }
 
 export default App;
