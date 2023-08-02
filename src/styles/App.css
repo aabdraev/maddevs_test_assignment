@@ -1,3 +1,84 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+  min-width: 800px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 1px 1px 25px 10px #00000050;
+}
+
+section,
+select {
+  padding: 2px 5px;
+}
+
+label {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+select {
+  border-radius: 5px;
+}
+
+select:hover,
+option:hover,
+option:checked {
+  background-color: #00000020;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #1e2022;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1px 2px;
+  width: 150px;
+  height: 25px;
+  border: 1px solid #1e2022;
+}
+
+th {
+  background-color: #000000;
+  color: #fff;
+  font-size: 18px;
+}
+
+td {
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #383636;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
 }

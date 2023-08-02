@@ -22,9 +22,9 @@
             "caption": "Jan"
         },
         {
-            "id": "feb",
-            "type": "float",
-            "caption": "Feb"
+            "id": "isActive",
+            "type": "boolean",
+            "caption": "isActive"
         }
     ],
     "data": [
@@ -33,7 +33,7 @@
             1024.3,
             "commercial",
             2048.2,
-            4096.0
+            true
         ],
         [
             "Mako",
@@ -41,7 +41,7 @@
             "internal",
             3465.3,
             {
-                "d": 12.5,
+                "d": false,
                 "color": "selected"
             }
         ],
@@ -50,42 +50,42 @@
             54.4,
             "commercial",
             564.8,
-            4652.3
+            false
         ],
         [
             "Sanctum",
             1916.2,
             "public",
             7752.5,
-            9844.9
+            true
         ],
         [
             "Quasar",
             9602.5,
             "internal",
             1919.6,
-            5846.4
+            false
         ],
         [
             "Jarvis",
             2267.1,
             "internal",
             9502.8,
-            3656.6
+            true
         ],
         [
             "gmhqx",
             1719.6,
             "oxvnm",
             2898.5,
-            3280.8
+            false
         ],
         [
             "myjga",
             3821.2,
             "zmwzs",
             4040.9,
-            7127.2
+            true
         ]
     ]
 }
