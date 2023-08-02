@@ -1,0 +1,151 @@
+{
+    "header": [
+        {
+            "id": "id",
+            "type": "number",
+            "caption": "ID"
+        },
+        {
+            "id": "msisdn",
+            "type": "number",
+            "caption": "MSISDN"
+        },
+        {
+            "id": "act_date",
+            "type": "string",
+            "caption": "Activation Date",
+            "align": "center"
+        },
+        {
+            "id": "flag_4g",
+            "type": "boolean",
+            "caption": "4G Flag",
+            "align": "right"
+        },
+        {
+            "id": "isActive",
+            "type": "boolean",
+            "caption": "Is Active"
+        },
+        {
+            "id": "os_version",
+            "type": "string",
+            "caption": "OS Version"
+        },
+        {
+            "id": "subscription_fee",
+            "type": "number",
+            "caption": "Subscription Fee"
+        }
+    ],
+    "data": [
+        [
+            "1",
+            996777035178,
+            "08-04-2022",
+            true,
+            true,
+            "iOS",
+            540
+        ],
+        [
+            "2",
+            996777777777,
+            "21-12-2012",
+            false,
+            false,
+            {
+                "d": "Android",
+                "version": 14.5
+            },
+            490
+        ],
+        [
+            "3",
+            996999252525,
+            "01-01-2001",
+            true,
+            {
+                "d": "false",
+                "reason": "terminated"
+            },
+            "iOS",
+            1000
+        ],
+        [
+            "3",
+            996999987654,
+            "23-09-2022",
+            true,
+            false,
+            "iOS",
+            420
+        ],
+        [
+            "4",
+            996666012345,
+            "12-06-2022",
+            true,
+            true,
+            "Android",
+            280
+        ],
+        [
+            "5",
+            {
+                "d": 996555543210,
+                "old": 996555543201
+            },
+            "30-01-2022",
+            false,
+            false,
+            "iOS",
+            620
+        ],
+        [
+            "6",
+            996123450987,
+            "03-11-2022",
+            true,
+            true,
+            "iOS",
+            480
+        ],
+        [
+            "7",
+            996987654321,
+            "21-05-2022",
+            false,
+            true,
+            "Android",
+            300
+        ],
+        [
+            "8",
+            996234567890,
+            "17-08-2022",
+            true,
+            false,
+            "iOS",
+            360
+        ],
+        [
+            "9",
+            996876543210,
+            "29-12-2022",
+            true,
+            true,
+            "Android",
+            420
+        ],
+        [
+            "10",
+            996333322221,
+            "14-02-2022",
+            false,
+            false,
+            "iOS",
+            540
+        ]
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "header": [
+        {
+            "id": "student_id",
+            "type": "number",
+            "caption": "Student ID",
+            "align": "left"
+        },
+        {
+            "id": "first_name",
+            "type": "string",
+            "caption": "First Name"
+        },
+        {
+            "id": "last_name",
+            "type": "string",
+            "caption": "Last Name"
+        },
+        {
+            "id": "age",
+            "type": "number",
+            "caption": "Age",
+            "align": "center"
+        },
+        {
+            "id": "gender",
+            "type": "string",
+            "caption": "Gender"
+        },
+        {
+            "id": "grade",
+            "type": "string",
+            "caption": "Grade"
+        },
+        {
+            "id": "marks",
+            "type": "number",
+            "caption": "Marks",
+            "align": "center"
+        }
+    ],
+    "data": [
+        [
+            1001,
+            "John",
+            "Doe",
+            18,
+            "Male",
+            "12th",
+            85
+        ],
+        [
+            1002,
+            "Emily",
+            "Smith",
+            17,
+            "Female",
+            {
+                "d": "11th",
+                "detail": "repeat year"
+            },
+            78
+        ],
+        [
+            1003,
+            "Michael",
+            "Johnson",
+            16,
+            "Male",
+            "10th",
+            92
+        ],
+        [
+            1004,
+            "Sophia",
+            "Williams",
+            18,
+            "Female",
+            "12th",
+            88
+        ],
+        [
+            1005,
+            "William",
+            {
+                "d": "Brown",
+                "old": "White"
+            },
+            17,
+            "Male",
+            "11th",
+            79
+        ],
+        [
+            1006,
+            "Emma",
+            "Miller",
+            16,
+            "Female",
+            "10th",
+            95
+        ],
+        [
+            1007,
+            "James",
+            "Anderson",
+            17,
+            "Male",
+            "11th",
+            87
+        ],
+        [
+            1008,
+            "Olivia",
+            "Lee",
+            18,
+            "Female",
+            "12th",
+            90
+        ],
+        [
+            1009,
+            "Daniel",
+            "Garcia",
+            15,
+            "Male",
+            "9th",
+            82
+        ],
+        [
+            1010,
+            "Ava",
+            {
+                "d": "Martinez",
+                "previous": "Rodriguez"
+            },
+            16,
+            "Female",
+            "10th",
+            94
+        ]
+    ]
+}

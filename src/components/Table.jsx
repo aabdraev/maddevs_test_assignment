@@ -1,5 +1,5 @@
 import React from 'react'
-import { getCellAlignment } from '../helpers/helpers';
+import { getAlignment } from '../helpers/helpers';
 
 const Table = ({ data }) => {
 
@@ -12,7 +12,7 @@ const Table = ({ data }) => {
                     <thead>
                         <tr>
                             {header.map((column) => (
-                                <th key={column.id} style={{ textAlign: column.align || "left" }}>
+                                <th key={column.id} style={{ textAlign: "center" }}>
                                     {column.caption}
                                 </th>
                             ))}
@@ -22,9 +22,11 @@ const Table = ({ data }) => {
                         {reportData.map((row, rowIndex) => (
                             <tr key={rowIndex}>
                                 {row.map((cell, cellIndex) => {
+                                    const column = header[cellIndex]
+                                    const cellAlignment = column.align || getAlignment(column.type)
 
                                     return (
-                                        <td key={cellIndex} style={{ textAlign: getCellAlignment(header[cellIndex], cell) }}>
+                                        <td key={cellIndex} style={{ textAlign: cellAlignment }}>
                                             {typeof cell === 'object' ? String(cell.d) : String(cell)}
                                         </td>
                                     );

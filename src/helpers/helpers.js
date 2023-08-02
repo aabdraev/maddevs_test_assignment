@@ -1,13 +1,10 @@
 import { cellTypes } from "./cell_types";
 
-export const getCellAlignment = (column, cell) => {
+export const getAlignment = (column) => {
     if (column.align) {
         return column.align;
     }
 
-    const cellType = typeof cell;
-    const dType = cellType === 'object' && cell.d !== undefined ? typeof cell.d : null;
-    const alignment =
-        dType !== null ? cellTypes.find((type) => type[dType]) : cellTypes.find((type) => type[cellType]);
-    return alignment ? alignment[dType || cellType] : 'left';
+    const alignment = cellTypes.find((type) => type[column]);
+    return alignment ? alignment[column] : 'left';
 };
